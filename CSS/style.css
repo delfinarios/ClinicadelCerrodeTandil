@@ -120,7 +120,7 @@ header input{
 }
 header ul{
     width: 100%;
-    margin: 0.5rem;
+    margin: 0.2rem;
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
@@ -1036,7 +1036,7 @@ position: static;
 }
 .bloque1 h1{
     margin: 0.5rem;
-padding: 12px;
+    padding: 12px;
 }
 .bloque1 .direccion{
     margin: 1rem;
@@ -1303,7 +1303,7 @@ footer .abajo img{
     display: none;
 }
 .cuadro-de-info{
-    width: fit-content;
+    width: 300px;
     margin: 15px;
     padding: 12px 20px;
     background-color: #D9D9D9;
@@ -1428,7 +1428,15 @@ footer .abajo img{
     padding-left: 10px;
     padding-top: 6px;
 }
-
+.carousel-caption a{
+    text-decoration: none;
+    text-align: start;
+    background-color: #DD592A;
+    color: #FFFFFF;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
 /* index SECCION4 */
 #contacto{
     margin: 10px 0;
@@ -1567,6 +1575,150 @@ mb-1{
 }
 #preguntasFrecuentes .contenedor-preguntas a{
     text-align: start !important;
+}
+
+#introSeccion{
+    padding: 60px 0 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner-fluid{
+    width: 100%;
+    margin: 0 15px;
+}
+#buscador{
+    padding: 60px 0 60px 0;
+    display: flex;
+    justify-content: center;
+}
+.row{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+}
+.col-1{
+    margin: 1rem 0;
+}
+.me-2{
+    margin: 0 !important;
+    margin-right: 0.5rem !important;
+}
+
+#seccionEspecialidades{
+    padding: 60px 0 20px 0;
+    width: 100%;
+    margin: 0 0 10px 0;
+    height: auto;
+ }
+ #seccionEspecialidades .conteiner-especialidades{
+    width: auto;
+    width: 100%;
+    margin: 0 ;
+    padding: 0 10px;
+ }
+ .especialidad h1{
+    font-size: 14px;
+ }
+ .especialidad h3{
+    font-size: 12px;
+ }
+ .especialidad h3:active{
+    color: #DD592A;
+    cursor: pointer;
+ }
+.card.card-body{
+    margin-bottom: 1rem;
+    width: auto;
+ }
+
+ #seccionDiagnostico .conteiner-diagnostico{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 15px;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .conteiner-diagnostico .especialidad{
+    width: 48%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+    padding-left: 0;
+ }
+ .conteiner-diagnostico .especialidad h1{
+    font-size: 14px !important;  
+    padding: 10px;
+    padding-bottom: 0;
+    width: 80%;
+    border: none;  
+ } 
+ .conteiner-diagnostico .especialidad img{
+    max-width: 20px;
+    max-height: 20px;
+ }
+
+ #sobreClinica{
+    margin: 10px 0;
+    padding: 30px 15px;
+    width: 100%;
+ }
+#sobreClinica .intro-seccion{
+    padding: 40px 0;
+}
+#sobreClinica .intro-seccion p{
+    width: 80%;
+}
+#sobreClinica .sobre-nosotros{
+    width: 100%;
+}
+.sobre-nosotros p{
+    font-size: 14px;
+}
+.sobre-nosotros .conteiner{
+    height: 350px;
+    width:fit-content;
+}
+
+.grid-conteiner{
+    margin: 1rem 0;
+    padding: 70px 15px 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.bloque1{
+    width: 100%;
+}
+.bloque1 h1{
+    margin: 0.5rem;
+    padding: 12px;
+}
+.bloque1 .direccion{
+    margin: 0.5rem;
+    padding: 12px;
+    width: fit-content;
+}
+.bloque1 iframe{
+    padding: 20px;
+    margin: 1rem;
+    width: fit-content;
+}
+.bloque2{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    justify-self: flex-end;
+}
+.direccion .item1 img{
+    width: 30px;
+}
+.direccion .item2 h2{
+    font-size: 14px;
 }
  }
 
