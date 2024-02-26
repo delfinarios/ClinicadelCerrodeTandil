@@ -1,0 +1,355 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+        <link rel="stylesheet" href="./CSS/style.css">
+        <title>Clínica del Cerro | Tandil</title>
+        <link rel="icon" href="./Images/logo4X4.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="left-side">
+            <img src="./Images/logo.png" alt="logo de clinica del cerro">
+            <a href="https://mediware.com.ar/delCerro/" target="_blank">Turno Online</a>
+        </div>
+        <nav>
+            <div class="top">
+                <div class="info">
+                    <img src="./Images/whatsapp.png" alt="logo whatsapp">
+                    <p>+54 (0249) 444-4746</p>
+                </div>
+                <div class="info">
+                    <img src="./Images/location.png" alt="logo ubicación">
+                    <p>Av. Bolivar 142, Tandil – Bs.As.</p>
+                </div>
+                <input class="button-search" type="search" placeholder="Buscar" aria-label="Search"/>
+            </div>
+    <!-- MENU NAVEVGACION -->
+            <ul>
+                    <a href="./index.html">Inicio</a>
+                    <li class="dropdown">
+                        Pacientes
+                        <ul class="dropdown-conteiner">
+                            <a href="https://mediware.com.ar/delCerro/" target="_blank">Turnos Online</a>
+                            <a href="./Pages/Cartilla-Médica.html">Cartilla Médica</a>
+                            <a href="./Pages/Cobertura-Médica.html">Cobertura Médica</a>
+                            <a href="https://mediware.com.ar/delCerro/" target="_blank">Mi portal</a>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        Servicios Médicos
+                        <ul class="dropdown-conteiner">
+                            <a href="./Pages/Especialidades.html">Especialidades</a>
+                            <a href="./Pages/Diagnostico-por-imagenes.html">Diagnóstico por Imágenes</a>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        Sobre la clínica
+                        <ul class="dropdown-conteiner">
+                            <a href="./Pages/Clinica-del-cerro.html">Clínica del Cerro</a>
+                            <a href="./Pages/Como-llegar.html">¿Cómo llegar?</a>
+                        </ul>
+                    </li>
+                    <a href="./Pages/Contacto.html">Contacto</a>
+            </ul>
+        </nav> 
+        <!-- MENU HAMBURGUESA -->
+        <nav class="navbar bg-body-tertiary fixed-end">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h1 class="offcanvas-title" id="offcanvasNavbarLabel">Clínica del Cerro</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          </form>
+                        </div>
+                      </nav>
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pacientes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Servicios médicos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sobre la Clínica</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Pages/Contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                  <div class="conteiner-telefono">
+                    <img src="./Images/whatsapp-naranja.png" alt="logo whatsapp">
+                    <a>+54 (0249) 444-4746</a>
+                </div>  
+                  <img src="./Images/logo4X4.png" alt="logo">
+                </div>
+              </div>
+            </div>
+        </nav> 
+    </header>
+
+    <main>   
+        <section id="bienvenido">
+            <div class="introduccion">
+                <div class="texto">
+                    <!-- CAROUSEL MOBILE -->
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./Images/carousel2.png" class="d-block w-100" alt="mujer con dolor de cabeza">
+                            <div class="carousel-caption d-md-block">
+                            <h2>Profesionales</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Images/carousel3.png" class="d-block w-100" alt="etiquetado">
+                            <div class="carousel-caption d-md-block">
+                            <h2>Cobertura Médica</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Images/carousel1.png" class="d-block w-100" alt="etiquetado">
+                            <div class="carousel-caption d-md-block">
+                            <h2>¿Cómo llegar?</h2>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <h1>CUIDA DE TU SALUD</h1>
+                    <p>En Clínica del Cerro contamos con una amplia variedad de los mejores profesionales para cuidar de tu salud.</p>
+                </div>
+                <div class="circular--portrait">
+                    <img src="./Images/imageninicio.png" alt="Imagen de un profesional"/>
+                </div>
+            </div>
+            <div class="accesos-directos">
+                <nav>
+                    <ul>
+                        <a href="https://mediware.com.ar/delCerro/" target="_blank">Portal de pacientes</a>
+                        <a href="./Pages/Cartilla-Médica.html">Profesionales</a>
+                        <a href="./Pages/Cobertura-Médica.html"">Cobertura Médica</a>
+                        <a href="./Pages/Como-llegar.html">¿Cómo llegar?</a>
+                    </ul>
+                </nav>
+            </div>
+            <!-- SOLO MOBILE -->
+            <div class="cuadro-de-info">
+                <p>Agendá tus turnos de manera rápida y fácil por WhastApp</p>
+                <div class="item">
+                    <img src="./Images/whatsapp.png" alt="logo de whatsapp">
+                    <p>+54 (0249) 444-4746</p>
+                </div>
+                <div class="item">
+                    <img src="./Images/location.png" alt="imagen de ubicación">
+                    <p>Av. Bolivar 142, Tandil, Buenos Aires.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="especialidades">
+            <div class="botones">
+                <ul>
+                    <li>
+                        <img src="./Images/gastroenterologia.png" alt="imagen gastroenterologia">
+                        Gastroenterología       
+                    </li>
+                    <li>
+                        <img src="./Images/ortopedia.png" alt="imagen ortopedia">
+                        Ortopedia
+                    </li>
+                    <li>
+                        <img src="./Images/centrodelamujer.png" alt="imagen centro de la mujer">
+                        Centro de la mujer                      
+                    </li>
+                    <li>
+                        <img src="./Images/cardiologo.png" alt="imagen cardiologia">
+                        Cardiología
+                    </li>
+                    <li>
+                        <img src="./Images/urologia.png" alt="imagen urología">
+                        Urología
+                    </li>
+                    <li>
+                        <img src="./Images/dermato.png" alt="imagen dermatologia">
+                        Dermatología
+                    </li>
+                    <li>
+                        <img src="./Images/ojo.png" alt="imagen oftalmologia">
+                        Oftalmología
+                    </li>
+                    <li>
+                        <img src="./Images/cirugia.png" alt="imagen cirugia">
+                        Cirugía
+                    </li>
+                    <li>
+                        <img src="./Images/nutri.png" alt="imagen nutricion">
+                        Nutrición
+                    </li>
+                </ul>
+                <a href="./Pages/Especialidades.html">Ver más especialidades..</a>
+            </div>
+            <div class="texto">
+                <h2>¡Bienvenido!</h2>
+                <h1>Todas las soluciones para tu salud en un solo lugar.</h1>
+                <p>Tu salud y bienestar son nuestra principal prioridad. Desde la infancia hasta la tercera edad, nuestro equipo comprometido está aquí para ofrecerte un cuidado personalizado y completo.</p>
+            </div>
+            <!-- MOBILE -->
+            <div class="especialidades-mobile">
+                <img src="./Images/especialidadesmobile.png" alt="especialistas"/>
+                <a href="./Pages/Especialidades.html">Especialidades</a>
+            </div>
+        </section>
+
+        <section id="noticias">
+            <div class="texto">
+                <h2>Mantente informado</h2>
+                <h1>Noticias Recientes</h1>
+                <p>Desde Clínica del Cerro te mantenemos informado con una sección de las noticias más relevantes sobre la salud.</p>
+            </div>
+
+            <div class="cards-noticias">
+                <div class="noticia">
+                    <div class="img-container">
+                        <img src="./Images/dolordecabeza.png" alt="mujer con dolor de cabeza"/>
+                    </div>
+                    
+                    <div class="contenido">
+                        <h2>Cefálea o dolor de cabeza</h2>
+                        <p>La cefalea o dolor de cabeza es uno de los trastornos más frecuentes del sistema nervioso. Puede tratarse de un dolor leve, de...</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <div class="img-container">
+                        <img src="./Images/etiquetado.png" alt="productos etiquetados"/>
+                    </div>                
+                    <div class="contenido">
+                        <h2>Ley de etiquetado frontal</h2>
+                        <p>Te contamos un poco de qué se trata esta nueva Ley de Promoción de la Alimentación Saludable, más conocida como “Ley de Etiquetado.</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <div class="img-container">
+                        <img src="./Images/cardio.png" alt="cardiología"/>
+                    </div>  
+                    
+                    <div class="contenido">
+                        <h2>Día Mundial de la Salud</h2>
+                        <p>El día Mundial de la Salud se celebra cada 7 de Abril para conmemorar en aniversario de la creación de la Organización Mundial...</p>
+                    </div>
+                </div>
+            </div>
+<!-- CAROUSEL MOBILE -->
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Images/dolordecabeza.png" class="d-block w-100" alt="mujer con dolor de cabeza">
+                    <div class="carousel-caption d-md-block">
+                      <h2>Cefálea o dolor de cabeza</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Images/cardio.png" class="d-block w-100" alt="cardiologia">
+                    <div class="carousel-caption d-md-block">
+                      <h2>Día Mundial de la Salud</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Images/etiquetado.png" class="d-block w-100" alt="etiquetado">
+                    <div class="carousel-caption d-md-block">
+                      <h2>Ley de etiquetado frontal</h2>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            <a>Ver más...</a>
+        </section>
+
+        <section id="contacto">
+            <div class="left">
+                <div class="texto">
+                    <h1>Contactate con nosotros.</h1>
+                    <p>Ante cualquier consulta no dudes en comunicarte con nosotros mediante WhatsApp o completando el siguiente formulario.</p>
+                    <div class="informacion-de-contacto">
+                        <div class="item">
+                            <img src="./Images/whatsapp.png" alt="logo de whatsapp">
+                            <h2>+54 (0249) 444-4746</h2>
+                        </div>
+                        <div class="item">
+                            <img src="./Images/clock.png" alt="imagen de un reloj">
+                            <h2>Lunes a Viernes de 8:00 a 20:00</h2>
+                        </div>
+                        <div class="item">
+                            <img src="./Images/location.png" alt="imagen de ubicación">
+                            <h2>Av. Bolivar 142, Tandil, Buenos Aires.</h2>
+                        </div>
+                    </div>
+                </div>
+                <a href="./Pages/Contacto.html">Formulario de contacto</a>
+            </div>
+
+            <div class="right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1234.9598136080708!2d-59.124866175923444!3d-37.333014246349656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1707589247031!5m2!1ses-419!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main> 
+
+    <footer>
+        <div class="arriba"> 
+            <h1>Clínica del Cerro | Tandil</h1>    
+        </div>
+        <div class="abajo"> 
+            <p>All rights reserved ® clinicadelcerrotandil.com.ar  | Terms and conditions apply!</p>
+            <div class="redes">
+                <img src="./Images/facebook.png" alt="logo facebook">
+                <img src="./Images/instagram.png" alt="logo instagram">
+                <img src="./Images/linkedin.png" alt="logo linkedin">
+            </div>
+        </div>   
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
