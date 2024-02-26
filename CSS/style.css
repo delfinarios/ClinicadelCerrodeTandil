@@ -27,8 +27,7 @@ p{
 
  /* HEADER */
 header{
-    position: fixed;
-   
+    position: fixed; 
     padding: 12px 0;
     width: 100%;
     height: auto;
@@ -46,11 +45,10 @@ header{
     background: -webkit-linear-gradient(top, rgba(217,217,217,1) 0%, rgba(230,230,230,1) 33%, rgba(244,244,244,1) 70%, rgba(255,255,255,1) 100%);
     background: -o-linear-gradient(top, rgba(217,217,217,1) 0%, rgba(230,230,230,1) 33%, rgba(244,244,244,1) 70%, rgba(255,255,255,1) 100%);
     background: -ms-linear-gradient(top, rgba(217,217,217,1) 0%, rgba(230,230,230,1) 33%, rgba(244,244,244,1) 70%, rgba(255,255,255,1) 100%);
-
 }
 .left-side{
     margin-left: 40px;
-    padding-left: 90px;
+    padding-left: 30px;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -59,19 +57,22 @@ header{
     flex-wrap: wrap;
 }
 header img{
-    height: 50%;
-    width:50%;
-    margin-bottom: 12px;
+    height: 40%;
+    width:40%;
+    margin-bottom: 10px;
 }
 .left-side a{
+    font-size: 14px;
     text-decoration: none;
-    width: auto;
+    width: max-content;
     color: #181818;
     background-color: #2EACBF;
     border: none;
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
 }
 .left-side a:hover{
     color: #004E5A;
@@ -102,6 +103,7 @@ header .top .info{
 header .top .info p{
     padding: 1rem;
     margin: 0;
+    font-size: 14px;
 }
 header .top .info img{
     width: 30px;
@@ -127,19 +129,20 @@ header ul{
 }
 header ul li{
     color: #181818;
-    font-size: 18px;
-    padding: 0 35px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 20px;
     border-right: 1px solid #181818;
     cursor:default;
+    width: auto;
 }
 header  ul li:hover{
     color: #DD592A; 
 }
 header  ul a{
-    
     color: #181818;
-    font-size: 18px;
-    padding: 0 35px;
+    font-size: 16px;
+    padding: 0 20px;
     text-decoration: none;
     border-right: 1px solid #181818;
 } 
@@ -162,17 +165,17 @@ header  ul a:hover{
     position: absolute;
     top: 20px;
     left: 0;
-    padding: 12px 0;
+    padding: 12px;
     width: max-content;
     background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 12px;  
+    border-radius: 10px;  
     flex-direction: column;
     align-items: flex-start;
 }
 .dropdown-conteiner a{
     border: none;
     padding: 10px;
+    font-size: 16px;
 }
 
 /* menu hamburguesa */
@@ -256,8 +259,8 @@ footer .abajo img{
     margin: 0 40px;
     margin-right: 90px;
     position: static;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
     border-radius: 50%;
 
@@ -266,9 +269,9 @@ footer .abajo img{
     -moz-box-shadow: 65px 12px 118px -45px rgba(46,172,191,1);
     box-shadow: 65px 12px 118px -45px rgba(46,172,191,1);
 }  
-  .circular--portrait img {
+.circular--portrait img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .accesos-directos { 
     width: 100%;
@@ -277,6 +280,10 @@ footer .abajo img{
 .accesos-directos nav{
     margin: 0 90px;
     padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 .accesos-directos ul{
     padding: 0 30px;
@@ -288,20 +295,24 @@ footer .abajo img{
     text-decoration: none;
     color: #FFFFFF;
     background-color: #004E5A;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     margin: 1rem;
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
+    align-self: center;
+    width: auto;
 }
 .accesos-directos ul a:hover{
     color: #004E5A;
     background-color: #FFFFFF;
     border: 1px solid #004E5A;
 }
-
+.cuadro-de-info{
+    display: none;
+}
 /* index SECCION2 */
 #especialidades {
     margin: 10px 0;
@@ -334,8 +345,8 @@ footer .abajo img{
 #especialidades .botones ul li{
     text-align: center;
     font-size: 14px;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     box-shadow:1px 1px 10px #181818 ;
     border-radius: 20px;
     margin: 10px;
@@ -355,9 +366,9 @@ footer .abajo img{
 #especialidades .botones a{
     text-decoration: none;
     padding: 20px 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    
+    color: #181818;
     cursor: pointer;
 }
 #especialidades .botones a:hover{
@@ -386,7 +397,9 @@ footer .abajo img{
     font-weight: 400;
    
 }
-
+.especialidades-mobile{
+    display: none;
+}
 /*index SECCION3 */
 #noticias{
     margin: 10px 0;
@@ -442,7 +455,7 @@ footer .abajo img{
 }
 #noticias a{
     width: auto;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     padding: 20px 90px 40px 150px;
     cursor: pointer;
@@ -509,6 +522,7 @@ footer .abajo img{
 }
 .left .texto h2{
     padding: 20px 0 20px 10px;
+    font-size: 16px;
 }
 .left .informacion-de-contacto{
     display: flex;
@@ -525,7 +539,7 @@ footer .abajo img{
     height: 30px;
 }
 .left a{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     text-decoration: none;
     width: auto;
@@ -696,7 +710,7 @@ justify-content: space-evenly;
 
 /* buscador por especialidad  */
 .form-select{
-    width:15rem;
+    width:100%;
     padding: .375rem 0.75rem ;
     margin-right: 0.5rem!important;
     font-size: 1rem;
@@ -1289,6 +1303,7 @@ footer .abajo img{
     display: none;
 }
 .cuadro-de-info{
+    width: fit-content;
     margin: 15px;
     padding: 12px 20px;
     background-color: #D9D9D9;
@@ -1322,7 +1337,7 @@ footer .abajo img{
     display: none;
 }
 #especialidades .texto{
-    width: 100%;
+    width: fit-content;
     margin: 0 5px;
     text-align: start;
     height: auto;
@@ -1339,7 +1354,7 @@ footer .abajo img{
     line-height: 25px;
 }
 .especialidades-mobile{
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1351,7 +1366,7 @@ footer .abajo img{
 .especialidades-mobile a{
     font-size: 14px;
     text-decoration: none;
-    width: auto;
+    width: fit-content;
     padding: 0.5rem 2rem;
     border-radius: 10px;
     border: none;
@@ -1382,12 +1397,7 @@ footer .abajo img{
     display: none;
 }
 #noticias .cards-noticias{
-    padding: 10px 0;
-    margin: 0 90px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: flex-start;
+    display: none;
 }
 .cards-noticias .noticia {
     display: none;
@@ -1406,7 +1416,8 @@ footer .abajo img{
     text-decoration: underline;
 }
 #carouselExampleCaptions{
-    display: inline;
+    display: flex;
+    width: 100%;
 }
 .carousel-caption h2{
     text-align: start;
