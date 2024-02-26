@@ -1,0 +1,47 @@
+
+#introSeccion{ 
+    @include intro-seccion-bootsrap;
+    }
+
+#coberturas{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    .conteiner-fluid{
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .card{
+        border: none;
+        border-bottom: 2px solid $color-secundario;
+        padding: 0 1rem 1rem 1rem;
+        .card-body{
+            margin-bottom: 2rem;
+            width: 400px;
+        }
+    }
+    .btn{
+        display: flex;
+        align-items: flex-start;
+    }
+    .btn-primary{
+        background-color: $color-claro;
+        color: $color-oscuro;
+        border-bottom: 2px solid $color-secundario;
+        border-radius: 10px;
+        width: 100%;
+        font-size: 18px;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+        &:hover{
+            border: none;
+            color: $color-secundario;
+        }
+    }
+}
+
+
