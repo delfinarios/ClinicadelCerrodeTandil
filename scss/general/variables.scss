@@ -4,7 +4,7 @@
 $color-primario:#004E5A;
 $color-secundario:#DD592A;
 $color-terciario:#2EACBF;
-$color-oscruo:#181818;
+$color-oscuro:#181818;
 $color-claro: #FFFFFF;
 
 //tipogrfia
@@ -27,13 +27,14 @@ $texto-lg:16px;
     padding: 10px 20px;
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
 }
 .btn-primary{ 
     @extend .btn;
     background-color: $color-primario;
     color: $color-claro;
     border-radius: 10px;
-    & :hover{
+    &:hover{
     background-color: $color-claro;
     color: $color-primario;
     border: 1px solid $color-primario;
@@ -41,12 +42,19 @@ $texto-lg:16px;
 }
 .btn-secondary{
     @extend .btn;
-    color: $color-oscruo;
+    color: $color-oscuro;
     background-color:$color-terciario;
     border-radius: 20px;
     &:hover{
     background-color: $color-claro;
-    color: $color-oscruo;
+    color: $color-oscuro;
     border: 1px solid $color-terciario;
     }
+}
+
+@mixin config-secciones{
+    margin: 10px 0;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
 }

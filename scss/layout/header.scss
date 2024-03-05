@@ -46,21 +46,22 @@ header{
         width: max-content;
         display: flex;
         align-items: center;
-    }
-    .top .info{
-        display: flex;
-        align-items: center;
-        margin: 0.5rem;
-    }
-    header .top .info p{
-        padding: 1rem;
-        margin: 0;
-        font-size: $texto-md;
-    }
-    .top .info img{
-        width: 30px;
-        height: 30px;
-        margin: 0;
+        .info{
+            display: flex;
+            align-items: center;
+            margin: 0.5rem;
+            p{
+                padding: 1rem;
+                margin: 0;
+                font-size: $texto-md;
+                margin-bottom: 0 !important;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                margin: 0;
+            }
+        }
     }
     input{
         border-radius:10px;
@@ -77,33 +78,33 @@ header{
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        li{
+            color: $color-oscuro;
+            font-size: $texto-lg;
+            text-align: center;
+            padding: 0 20px;
+            border-right: 1px solid $color-oscuro;
+            cursor:default;
+            width: auto;
+            &:hover{
+                color: $color-secundario 
+            }
+        }
+        a{
+            color: $color-oscuro;
+            font-size: $texto-lg;
+            padding: 0 20px;
+            text-decoration: none;
+            border-right: 1px solid $color-oscuro;
+            &:last-of-type{
+                border-right: unset;
+                padding-right: 0;
+            }
+            &:hover{
+                color: #DD592A;
+            }
+        } 
     }
-    ul li{
-        color: $color-oscruo;
-        font-size: $texto-lg;
-        text-align: center;
-        padding: 0 20px;
-        border-right: 1px solid $color-oscruo;
-        cursor:default;
-        width: auto;
-        &:hover{
-            color: $color-secundario 
-        }
-    }
-    ul a{
-        color: $color-oscruo;
-        font-size: $texto-lg;
-        padding: 0 20px;
-        text-decoration: none;
-        border-right: 1px solid $color-oscruo;
-        &:last-of-type{
-            border-right: unset;
-            padding-right: 0;
-        }
-        &:hover{
-            color: #DD592A;
-        }
-    } 
     .dropdown{
         position: relative;
         &:hover .dropdown-conteiner{

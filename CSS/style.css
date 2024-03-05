@@ -222,8 +222,7 @@ footer .abajo img{
 
 /* index SECCION1 */
 #bienvenido{
-    margin: 0 0 10px 0 ;
-    
+    margin: 10px 0 ;  
     height: auto;
     display: flex;
     flex-wrap: nowrap;

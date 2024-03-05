@@ -1,0 +1,33 @@
+footer{
+    margin: 100px 0 30px 0 ;
+    display: flex;
+    flex-direction: column;
+    .arriba {
+        border-bottom: 1px solid $color-primario;
+        width: auto;
+        margin: 0 90px;
+        text-align: left;
+        h1{
+            font-size:$subtitulo-lg;
+            font-weight: 400;
+            color: $color-primario;
+            width: auto;    
+            }
+        }
+    .abajo{
+        padding-top: 10px;
+        width: auto;
+        margin: 0 90px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size:$texto-md;
+            width: auto;
+            } 
+        img{
+            cursor: pointer;
+            }    
+        }     
+}
