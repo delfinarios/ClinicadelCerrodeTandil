@@ -87,8 +87,7 @@ header nav{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 header .top{
     width: max-content;
@@ -125,7 +124,6 @@ header ul{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-
 }
 header ul li{
     color: #181818;

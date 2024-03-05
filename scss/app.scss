@@ -1,0 +1,19 @@
+
+//general
+@import "./general/reset.scss";
+@import "./general/variables.scss";
+
+//layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+//pages
+@import "./pages/index.scss";
+@import "./pages/cartilla-medica.scss";
+@import "./pages/clinica-del-cerro.scss";
+@import "./pages/cobertura-medica.scss";
+@import "./pages/como-llegar.scss";
+@import "./pages/contacto.scss";
+@import "./pages/diagnostico-por-imagenes.scss";
+@import "./pages/especialidades.scss";
+

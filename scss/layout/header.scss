@@ -1,0 +1,134 @@
+
+header{
+    position: fixed; 
+    padding: 12px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //shadow
+    -webkit-box-shadow: 0px 28px 39px -33px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 28px 39px -33px rgba(0,0,0,0.75);
+    box-shadow: 0px 28px 39px -33px rgba(0,0,0,0.75);
+   //gradient
+    background: rgba(217,217,217,1);
+    background: -moz-linear-gradient(top, rgba(217,217,217,1) 0%, rgba(230,230,230,1) 33%, rgba(244,244,244,1) 70%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(217,217,217,1)), color-stop(33%, rgba(230,230,230,1)), color-stop(70%, rgba(244,244,244,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(217,217,217,1) 0%, rgba(230,230,230,1) 33%, rgba(244,244,244,1) 70%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(217,217,217,1) 0%, rgba(230,230,230,1) 33%, rgba(244,244,244,1) 70%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(217,217,217,1) 0%, rgba(230,230,230,1) 33%, rgba(244,244,244,1) 70%, rgba(255,255,255,1) 100%);
+    .left-side{
+        margin-left: 40px;
+        padding-left: 30px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    img{
+        height: 40%;
+        width:40%;
+        margin-bottom: 10px;
+    }
+    nav{
+        height: 100px;
+        margin-right: 40px;
+        padding-right: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center; 
+    }
+    .top{
+        width: max-content;
+        display: flex;
+        align-items: center;
+    }
+    .top .info{
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+    }
+    header .top .info p{
+        padding: 1rem;
+        margin: 0;
+        font-size: $texto-md;
+    }
+    .top .info img{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+    input{
+        border-radius:10px;
+        color: $color-claro;
+        background-color:$color-primario;
+        font-size: $texto-lg;
+        padding: 5px;
+        margin: 1rem;
+    }
+    ul{
+        width: 100%;
+        margin: 0.2rem;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    ul li{
+        color: $color-oscruo;
+        font-size: $texto-lg;
+        text-align: center;
+        padding: 0 20px;
+        border-right: 1px solid $color-oscruo;
+        cursor:default;
+        width: auto;
+        &:hover{
+            color: $color-secundario 
+        }
+    }
+    ul a{
+        color: $color-oscruo;
+        font-size: $texto-lg;
+        padding: 0 20px;
+        text-decoration: none;
+        border-right: 1px solid $color-oscruo;
+        &:last-of-type{
+            border-right: unset;
+            padding-right: 0;
+        }
+        &:hover{
+            color: #DD592A;
+        }
+    } 
+    .dropdown{
+        position: relative;
+        &:hover .dropdown-conteiner{
+            display: flex;
+        }
+    }
+    .dropdown-conteiner{
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        padding: 12px;
+        width: max-content;
+        background-color:$color-claro;
+        border-radius: 10px;  
+        flex-direction: column;
+        align-items: flex-start;
+        a{
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+    /* menu hamburguesa */
+    .navbar{
+        display: none;
+    }
+ }

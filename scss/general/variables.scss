@@ -1,0 +1,52 @@
+
+
+//colores
+$color-primario:#004E5A;
+$color-secundario:#DD592A;
+$color-terciario:#2EACBF;
+$color-oscruo:#181818;
+$color-claro: #FFFFFF;
+
+//tipogrfia
+$titulo-sm:25px;
+$titulo-md:40px;
+$titulo-lg:60px;
+
+$subtitulo-sm:14px;
+$subtitulo-md:18px;
+$subtitulo-lg:22px;
+
+$texto-sm:12px;
+$texto-md:14px;
+$texto-lg:16px;
+
+.btn{
+    font-size: 14px;
+    width: max-content;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-primary{ 
+    @extend .btn;
+    background-color: $color-primario;
+    color: $color-claro;
+    border-radius: 10px;
+    & :hover{
+    background-color: $color-claro;
+    color: $color-primario;
+    border: 1px solid $color-primario;
+    }
+}
+.btn-secondary{
+    @extend .btn;
+    color: $color-oscruo;
+    background-color:$color-terciario;
+    border-radius: 20px;
+    &:hover{
+    background-color: $color-claro;
+    color: $color-oscruo;
+    border: 1px solid $color-terciario;
+    }
+}
