@@ -1,0 +1,97 @@
+
+#introForm{
+    height: auto;
+    margin: 20px 0;
+    padding: 60px 90px;
+    width: 100%;
+    background-color: #D9D9D9;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/* Gradient */
+    background: rgba(217,217,217,0);
+    background: -moz-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(217,217,217,0)), color-stop(39%, rgba(217,217,217,0.39)), color-stop(100%, rgba(217,217,217,1)));
+    background: -webkit-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    background: -o-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    background: -ms-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    background: linear-gradient(to right, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d9d9', endColorstr='#d9d9d9', GradientType=1 );
+    img{
+        width: 100%;
+    }
+    .input-group {
+        position: static;
+    }
+    .mb-1{
+        width: 49%;
+        &:first-of-type{
+            margin: 0 0.5rem 0 0;
+        }
+    }
+    .boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 10px 0 10px;
+    }
+}
+
+
+#preguntasFrecuentes{
+    padding: 50px 10px;
+    margin: 10px 90px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    .texto {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        a{
+            text-decoration: none;
+            width: auto;
+            color: #181818;
+            background-color: #2EACBF;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 30px;
+            margin: 10px;
+            cursor: pointer;
+            align-self: center;
+            &:hover{
+                color: #004E5A;
+                background-color: #FFFFFF;
+                border: 2px solid #004E5A;
+            }
+        }
+    }
+    .seccion-preguntas{
+        width: 100%;
+    }
+    .contenedor-preguntas{
+        width: 100%;
+        padding-top: 20px;
+        .card.card-body{
+            width: 100%;
+        }
+    }
+    .btn-primary {
+        width: 100%;
+        background-color: $color-claro;
+        color: $color-oscuro;
+        border-bottom: 2px solid $color-primario;
+        text-align: start;
+        &:hover{
+            color: $color-primario;
+            border: none;
+        }
+    }
+}
+

@@ -1,0 +1,50 @@
+
+#introSeccion{ 
+    @include intro-seccion-bootsrap;
+    }
+
+#seccionDiagnostico{
+    margin: 0 0 10px 0;
+    height: auto;
+    .conteiner-diagnostico{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        padding: 50px 90px;
+        justify-content: space-around;
+        .especialidad{
+            width: 40%;
+            height: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            margin-right: 5px;
+            padding-left: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid $color-primario;
+            border-radius: 10px;
+            cursor: pointer;
+            h1{
+                font-size: 22px !important;  
+                padding: 10px;
+                padding-bottom: 0;
+                width: 80%;
+                border: none;
+                &:hover{
+                    color: $color-secundario;
+                    cursor: pointer;
+                 }
+             }
+            img{
+                max-width: 30px;
+                max-height: 30px;
+             }
+         }
+     }
+ }
+
+
+ 

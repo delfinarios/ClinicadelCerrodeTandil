@@ -1,0 +1,40 @@
+
+#introSeccion{ 
+    @include intro-seccion-bootsrap;
+    }
+
+#seccionEspecialidades{
+        margin: 0 0 10px 0;
+        height: auto;
+        .conteiner-especialidades{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        padding: 50px 90px;
+        margin: 10px 20px;
+        .especialidad{
+            width: 50%;
+            height: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            h1{
+                border-bottom: 2px solid $color-secundario;
+                padding: 12px;
+                width: 80%;
+                border-radius: 10px;
+             }
+             h3{
+                font-size: 18px;
+                padding: 12px;  
+                &:hover{
+                    color: $color-secundario;
+                    cursor: pointer;
+                 }
+             }
+         }
+     }
+    }
+ 

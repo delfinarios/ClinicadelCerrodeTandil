@@ -1,0 +1,83 @@
+
+.grid-conteiner{
+    margin: 1rem;
+    padding: 0 90px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas:
+        "bloque1 bloque2"
+        "bloque3 bloque2";
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: flex-start;
+    .bloque1{
+        grid-area: bloque1;
+        justify-self: flex-start;
+        align-self: flex-start;
+        h1{
+            margin: 0.5rem;
+            padding: 12px;
+        }
+        .direccion{
+            margin: 1rem;
+            padding: 12px;
+        }
+        iframe{
+            padding: 20px;
+            margin: 1rem;
+        }
+    }
+    
+    .bloque2{
+        grid-area: bloque2;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        justify-self: flex-end;
+        img{
+            width: 100%;
+            height: 100%; 
+            object-fit: cover;
+        }
+    }
+    .bloque3{
+        grid-area: bloque3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: auto; 
+        .colectivos{
+            margin: 1rem;
+            padding-right: 30px;
+            ul li{
+                list-style-type: none;
+            }
+        }
+        .estacionamiento{
+            margin: 1rem;
+        }
+    }
+    .direccion{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "item1 item2"
+        "item1 item3";
+        .item1{
+            grid-area: item1;
+        }
+        .item2{
+        grid-area: item2;
+        }
+        .item3{
+            grid-area: item3;
+        }
+    }
+}
+

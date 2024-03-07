@@ -1,0 +1,78 @@
+
+#sobreClinica{
+    margin: 20px 0;
+    padding: 0 90px;
+    .intro-seccion{
+        padding: 20px 0;
+        margin-top: 30px;
+        text-align: center;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            width: 60%;
+            align-self: center;
+        }
+    }
+    .sobre-nosotros{
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        position: static;
+        h1{
+            background-color: $color-primario;
+            color: $color-claro;
+            width: 100%;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);  
+        }
+        p{
+            font-size: 14px;
+        }
+        .conteiner{
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            height: 350px;
+            width: 350px;
+            background-image: url(../Images/clinica.png);
+            background-repeat: no-repeat;      
+            -webkit-box-shadow: 10px 13px 54px -24px rgba(24,24,24,1);
+            -moz-box-shadow: 10px 13px 54px -24px rgba(24,24,24,1);
+            box-shadow: 10px 13px 54px -24px rgba(24,24,24,1);
+            &:first-of-type{
+                background-image: url(../Images/clinica.png);
+                background-repeat: no-repeat;
+            }
+            &:nth-of-type(2){
+                background-image: url(../Images/mision.png);
+                background-repeat: no-repeat;
+            }
+            &:last-of-type{
+                background-image: url(../Images/vision.png);
+                background-repeat: no-repeat;
+            }
+            &:hover{
+                background-image: none;
+                background-color: $color-primario;
+            }
+            p{
+                height: 350px;
+                color: transparent;
+                &:hover{
+                    color: $color-claro;
+                }
+            }
+        }
+    }
+}
+

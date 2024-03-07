@@ -1,0 +1,82 @@
+
+#introSeccion{ 
+@include intro-seccion-bootsrap;
+}
+
+#buscador{
+    padding: 50px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    .bg-body-tertiary {
+        --bs-bg-opacity: 0;
+        background-color: transparent!important;
+    }
+     .form-control{
+        background-color: #979797;
+        width: max-content;
+        &:focus{
+            color: $color-claro;
+            background-color: #979797;   
+            outline: 0;
+            box-shadow: none;
+            border: none; 
+        }
+     }
+     .btn-outline-success {
+        --bs-btn-color: #004E5A;
+        --bs-btn-border-color:#1E1E1E;
+        --bs-btn-hover-color: #1E1E1E;
+        --bs-btn-hover-bg: #004E5A;
+        --bs-btn-hover-border-color: #004E5A;
+        --bs-btn-focus-shadow-rgb: 25,135,84;
+        --bs-btn-active-color: #1E1E1E;
+        --bs-btn-active-bg: $color-primario;
+        --bs-btn-active-border-color: $color-primario;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: $color-primario;
+        --bs-btn-disabled-bg: transparent;
+        --bs-btn-disabled-border-color:$color-primario;
+        --bs-gradient: none;
+    }
+    .btn-group>:not(.btn-check)+.btn {
+    border-radius: 5px;  
+    }
+    .btn-group{
+    display: flex;
+    }
+    .form-select{
+        width:100%;
+        padding: .375rem 0.75rem ;
+        margin-right: 0.5rem!important;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #979797;
+        color:$color-oscuro;
+        border: none; 
+        &:focus {
+            color:  $color-claro;
+            background-color: #979797;   
+            outline: 0;
+            box-shadow: 0 0 0 0;  
+         }
+        &:hover{
+            background-color:$color-claro;
+            color: $color-oscuro;
+            border: 2px solid  $color-oscuro;
+        }
+        option{
+            background-color:$color-claro;
+            &:hover{
+                background-color: $color-claro;
+                color: $color-secundario !important;
+            }
+            }
+    }
+    .conteiner-fluid{      
+        width: 100%;
+        margin: 0 90px;
+        padding: 0 200px;
+    }
+}
+
