@@ -1120,7 +1120,6 @@ grid-area: item2;
         height: 100px;
         justify-content: space-between;
         align-items: center;
-    
     }
     .left-side{
         margin-left: 5px;
@@ -1407,9 +1406,8 @@ footer .abajo img{
     font-size: 14px;
     text-align: center;
     padding: 20px 12px;
-    cursor: pointer;
 }
-#noticias a:hover{
+#noticias a:active{
     text-decoration: underline;
 }
 #carouselExampleCaptions{

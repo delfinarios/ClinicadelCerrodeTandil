@@ -1,0 +1,66 @@
+
+//mixin para las secciones del index
+@mixin config-secciones{
+    margin: 10px 0;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+//mixin para secciones con bootstrap
+@mixin intro-seccion-bootsrap{
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+//gradient
+    background: rgba(217,217,217,0);
+    background: -moz-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(217,217,217,0)), color-stop(39%, rgba(217,217,217,0.39)), color-stop(100%, rgba(217,217,217,1)));
+    background: -webkit-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    background: -o-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    background: -ms-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    background: linear-gradient(to right, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d9d9', endColorstr='#d9d9d9', GradientType=1 );
+    .conteiner-fluid{
+        width: 1200px;
+        margin: 0 90px;
+        .conteiner-img-secciones {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            img{
+                width: 100%;
+                height: 100%; 
+                object-fit: cover;
+            }
+        }
+    }
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        align-items: center;
+    }
+}
+
+//mixin media query
+@mixin mobile{
+    @media screen and (max-width: 576px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
