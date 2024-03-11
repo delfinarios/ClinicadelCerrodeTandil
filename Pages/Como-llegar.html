@@ -6,13 +6,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Cómo llegar</title>
     <link rel="icon" href="../Images/logo4X4.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <div class="left-side">
-            <img src="../Images/logo.png" alt="logo de clinica del cerro">
+            <a href="../index.html" img src="../Images/logo.png" height="50px" width="50px" alt="logo de clinica del cerro">
+                <img href="../index.html" src="../Images/logo.png" alt="logo de clinica del cerro"> </a>
             <a class="btn-secondary" href="https://mediware.com.ar/delCerro/">Turno Online</a>
         </div> 
         <nav>
@@ -55,12 +57,12 @@
                     </li>
                     <a href="../Pages/Contacto.html">Contacto</a>
             </ul>
-        </nav>       
+        </nav>        
     </header>
 
     <main>
         <div class="grid-conteiner">
-            <div class="bloque1">
+            <div class="bloque1" data-aos="fade-right">
                 <h1>¿Cómo llegar?</h1>
                 <div class="direccion">
                     <div class="item1">
@@ -78,7 +80,7 @@
             <div class="bloque2">
                 <img src="../Images/comollegar.png" alt="clinica infraestructura"/>
             </div>
-            <div class="bloque3">
+            <div class="bloque3" data-aos="fade-right">
                 <div class="colectivos">
                     <h2>Líneas de colectivos</h2>
                     <ul>
@@ -109,5 +111,10 @@
         </div>
         
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

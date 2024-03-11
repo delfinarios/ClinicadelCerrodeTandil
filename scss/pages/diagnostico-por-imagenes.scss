@@ -1,6 +1,19 @@
 
 #introSeccion{ 
     @include intro-seccion-bootsrap;
+    @include mobile{
+        padding: 60px 0 20px 0;
+        margin: 12px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .conteiner-fluid{
+                width: 100%;
+                margin: 20px 15px !important;
+                padding: 0 25px;
+            }
+        }
     }
 
 #seccionDiagnostico{
@@ -14,6 +27,22 @@
         align-content: space-around;
         padding: 50px 90px;
         justify-content: space-around;
+        @include mobile{
+            flex-direction: column;
+            padding: 50px 20px;
+            width: 100%;
+            .especialidad{
+                width: 100% !important;
+            }
+        }
+        @include tablet{
+            flex-direction: column;
+            padding: 50px 20px;
+            width: 100%;
+            .especialidad{
+                width: 100% !important;
+            }
+        }
         .especialidad{
             width: 40%;
             height: 100%;

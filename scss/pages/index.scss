@@ -3,7 +3,7 @@
     @include config-secciones;
     flex-direction: column;
     margin-top: 0;
-    padding-top: 10%;
+    padding-top: 0;
     @include mobile{
         margin: 10px 0;
         padding: 30px 15px;
@@ -11,6 +11,16 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
+        align-items: center;
+    }
+    @include tablet{
+        margin: 10px 0;
+        padding: 30px 15px;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
     }
     .introduccion{
         padding: 30px 0;
@@ -21,12 +31,12 @@
         align-items: center;
         @include mobile{
             padding: 50px 0 20px;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content:  space-between;
-        align-items: center;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content:  space-between;
+            align-items: center;
         }
         .texto {
             margin: 0 40px;
@@ -154,7 +164,7 @@
         .cuadro-de-info{
             display: none;
             @include mobile{
-                width: 300px;
+                width: auto;
                 margin: 15px;
                 padding: 12px 20px;
                 background-color: #D9D9D9;
@@ -173,6 +183,10 @@
                     p{
                         margin: 0 5px;
                     }
+                    img{
+                        height: 10%;
+                        width: 10%;
+                    }
                 }
             }  
         } 
@@ -187,6 +201,12 @@
         display: flex;
         flex-direction: column;
     }
+    @include tablet{
+        margin: 10px 0;
+        padding: 30px 15px;
+        height: auto;
+        display: flex;
+    }
     .botones{
         margin: 0 20px 0 90px; 
         width: 50%;
@@ -196,6 +216,10 @@
         align-items: flex-start;
         @include mobile{
             display: none;
+        }
+        @include tablet{
+            margin: 0 10px 0 10px;
+            padding: 50px 0 50px 10px;
         }
         ul{
             list-style-type: none;
@@ -208,6 +232,10 @@
             justify-items: center;
             justify-content: center;
             align-content: center;
+            @include tablet{
+                column-gap: 5px;
+                row-gap: 5px;
+            }
             li{
                 text-align: center;
                 font-size:$texto-md;
@@ -227,6 +255,12 @@
                 &:hover{
                     color:$color-secundario;
                     font-weight:600;  
+                }
+                @include tablet{
+                    height: 90px;
+                    width: 90px;
+                    font-size: $texto-sm;
+                    margin: 5px;
                 }
             } 
         }
@@ -261,6 +295,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start; 
+        }
+        @include tablet{
+            margin: 0 10px 0 10px;
+            padding-right: 10px;
         }
         h2{
             color: $color-secundario;
@@ -330,6 +368,10 @@
             padding: 10px ;
             margin: 0 12px;
         }
+        @include tablet{
+            padding: 10px ;
+            margin: 0 12px;
+        }
         h2{
             color: $color-secundario;
         }
@@ -344,6 +386,10 @@
             @include mobile{
                 display: none;
             }
+            @include tablet{
+                padding: 0 10px;
+                width: 100%;
+            }
         }
     }
     .cards-noticias{
@@ -355,6 +401,9 @@
         align-items: flex-start;
         @include mobile{
             display: none;
+        }
+        @include tablet{
+            margin: 0 10px;
         }
         .noticia {
             width: 100%;
@@ -445,6 +494,10 @@
         flex-direction: column;
         width: 100%;
     }
+    @include tablet{
+        margin: 10px 0;
+        padding: 30px 15px;
+    }
      /* gradient */
      background: rgba(217,217,217,0);
      background: -moz-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
@@ -483,6 +536,10 @@
                 color: #FFFFFF;
                 margin: 10px;
             }
+        }
+        @include tablet{
+            padding: 30px 10px;
+            margin-left: 10px;
         }
         .texto{
             width: 100%;
@@ -565,6 +622,14 @@
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
+            iframe{
+                width: 100%;
+            }
+        }
+        @include tablet{
+            padding: 30px 10px;
+            margin: 12px;
+            width: 50%;
             iframe{
                 width: 100%;
             }

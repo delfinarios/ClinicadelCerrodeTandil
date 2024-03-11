@@ -1,6 +1,19 @@
 
 #introSeccion{ 
     @include intro-seccion-bootsrap;
+    @include mobile{
+        padding: 60px 0 20px 0;
+        margin: 12px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .conteiner-fluid{
+                width: 100%;
+                margin: 20px 15px !important;
+                padding: 0 25px;
+            }
+        }
     }
 
 #seccionEspecialidades{
@@ -14,6 +27,18 @@
         align-content: space-around;
         padding: 50px 90px;
         margin: 10px 20px;
+        @include tablet{
+            padding: 20px 10px;
+            margin: 10px 10px;
+        }
+        @include mobile{
+            margin: 12px 0;
+            padding: 12px;
+            flex-direction: column;
+            .especialidad{
+                width: 100% !important;
+            }
+        }
         .especialidad{
             width: 50%;
             height: 100%;
@@ -25,14 +50,25 @@
                 padding: 12px;
                 width: 80%;
                 border-radius: 10px;
+                @include tablet{
+                    font-size: $texto-lg;
+                }
              }
+            
              h3{
                 font-size: 18px;
                 padding: 12px;  
                 &:hover{
                     color: $color-secundario;
                     cursor: pointer;
-                 }
+                }
+                @include tablet{
+                    font-size: $texto-sm;
+                    &:active{
+                        color: $color-secundario;
+                        cursor: pointer;
+                    }
+                }
              }
          }
      }

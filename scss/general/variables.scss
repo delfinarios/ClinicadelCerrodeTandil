@@ -43,6 +43,8 @@ $texto-lg:16px;
     border: 1px solid $color-primario;
     }
     @include mobile{
+        padding: 5px 10px;
+        font-size: 12px;
         &:active{
             background-color: $color-claro;
             color: $color-primario;
@@ -62,6 +64,8 @@ $texto-lg:16px;
     border: 1px solid $color-terciario;
     }
     @include mobile{ 
+        padding: 5px 10px;
+        font-size: 12px;
         &:active{
             background-color: $color-claro;
             color: $color-oscuro;

@@ -5,6 +5,9 @@ footer{
     @include mobile{
         margin: 10px 0 5px 0 ;
     }
+    @include tablet{
+        margin: 10px 0 5px 0 ;
+    }
     .arriba {
         border-bottom: 1px solid $color-primario;
         width: auto;
@@ -19,6 +22,9 @@ footer{
         @include mobile{
             margin: 0 12px;
         }
+        @include tablet{
+            margin: 0 20px;
+        }
         }
     .abajo{
         padding-top: 10px;
@@ -31,6 +37,10 @@ footer{
         @include mobile{
             padding-top: 10px;
             margin: 0 12px;
+        }
+        @include tablet{
+            padding-top: 10px;
+            margin: 0 20px;
         }
         p{
             font-size:$texto-md;

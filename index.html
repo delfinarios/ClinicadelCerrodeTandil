@@ -9,11 +9,13 @@
         <link rel="stylesheet" href="./css/main.css">
         <title>Clínica del Cerro | Tandil</title>
         <link rel="icon" href="./Images/logo4X4.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <div class="left-side">
-            <img src="./Images/logo.png" alt="logo de clinica del cerro">
+            <a href="./index.html" img src="./Images/logo.png" height="50px" width="50px" alt="logo de clinica del cerro">
+                <img href="./index.html" src="./Images/logo.png" alt="logo de clinica del cerro"> </a>
             <a class="btn-secondary" href="https://mediware.com.ar/delCerro/">Turno Online</a>
         </div>
         <nav>
@@ -116,7 +118,7 @@
     <main>   
         <section id="bienvenido">
             <div class="introduccion">
-                <div class="texto">
+                <div class="texto"  data-aos="fade-right">
                     <!-- CAROUSEL MOBILE -->
                     <div id="carouselExampleCaptions" class="carousel slide">
                         <div class="carousel-indicators">
@@ -156,7 +158,7 @@
                     <h1>CUIDA DE TU <span style="color: #2EACBF;">SALUD</span></h1>
                     <p>En Clínica del Cerro contamos con una amplia variedad de los mejores profesionales para cuidar de tu salud.</p>
                 </div>
-                <div class="circular--portrait">
+                <div class="circular--portrait" data-aos="zoom-in">
                     <img src="./Images/imageninicio.png" alt="Imagen de un profesional"/>
                 </div>
             </div>
@@ -185,7 +187,7 @@
         </section>
 
         <section id="especialidades">
-            <div class="botones">
+            <div class="botones" data-aos="zoom-in">
                 <ul>
                     <li>
                         <img src="./Images/gastroenterologia.png" alt="imagen gastroenterologia">
@@ -226,7 +228,7 @@
                 </ul>
                 <a href="./Pages/Especialidades.html">Ver más especialidades..</a>
             </div>
-            <div class="texto">
+            <div class="texto" data-aos="fade-left">
                 <h2>¡Bienvenido!</h2>
                 <h1>Todas las soluciones para tu salud en un solo lugar.</h1>
                 <p>Tu salud y bienestar son nuestra principal prioridad. Desde la infancia hasta la tercera edad, nuestro equipo comprometido está aquí para ofrecerte un cuidado personalizado y completo.</p>
@@ -238,7 +240,7 @@
             </div>
         </section>
 
-        <section id="noticias">
+        <section id="noticias" data-aos="zoom-in">
             <div class="texto">
                 <h2>Mantente informado</h2>
                 <h1>Noticias Recientes</h1>
@@ -317,7 +319,7 @@
         </section>
 
         <section id="contacto">
-            <div class="left">
+            <div class="left" data-aos="fade-right">
                 <div class="texto">
                     <h1>Contactate con nosotros.</h1>
                     <p>Ante cualquier consulta no dudes en comunicarte con nosotros mediante WhatsApp o completando el siguiente formulario.</p>
@@ -339,7 +341,7 @@
                 <a class="btn-primary" href="./Pages/Contacto.html">Formulario de contacto</a>
             </div>
 
-            <div class="right">
+            <div class="right" data-aos="zoom-in">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1234.9598136080708!2d-59.124866175923444!3d-37.333014246349656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1707589247031!5m2!1ses-419!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
@@ -360,5 +362,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

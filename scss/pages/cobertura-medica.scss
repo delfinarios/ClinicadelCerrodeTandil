@@ -1,6 +1,19 @@
 
 #introSeccion{ 
     @include intro-seccion-bootsrap;
+    @include mobile{
+        padding: 60px 0 20px 0;
+        margin: 12px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .conteiner-fluid{
+                width: 100%;
+                margin: 20px 15px !important;
+                padding: 0 25px;
+            }
+        }
     }
 
 #coberturas{
@@ -12,6 +25,14 @@
         margin: 20px;
         display: flex;
         justify-content: space-evenly;
+        @include mobile{
+            flex-direction: column;
+            align-items:center ;
+        }
+        @include tablet{
+            flex-direction: column;
+            align-items:center ;
+        }
     }
     .card{
         border: none;
