@@ -6,13 +6,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Sobre Clínica del Cerro</title>
     <link rel="icon" href="../Images/logo4X4.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
             <div class="left-side">
-                <img src="../Images/logo.png" alt="logo de clinica del cerro">
+                <a href="../index.html" img src="../Images/logo.png" height="50px" width="50px" alt="logo de clinica del cerro">
+                    <img href="../index.html" src="../Images/logo.png" alt="logo de clinica del cerro"> </a>
                 <a class="btn-secondary" href="https://mediware.com.ar/delCerro/">Turno Online</a>
             </div>
             <nav>
@@ -64,7 +66,7 @@
                 <h1>Sobre Clínica del Cerro</h1>
                 <p> En cada paso, en cada consulta, estamos comprometidos con tu salud, guiándote hacia un futuro más saludable y pleno. Bienvenido a un espacio donde la atención médica se encuentra con el compromiso afectuoso: tu bienestar, nuestra prioridad constante.</p>
         </div>
-        <div class="sobre-nosotros">
+        <div class="sobre-nosotros" data-aos="zoom-in">
                 <div class="conteiner">
                     <h1>Historia</h1>  
                      <p>Nuestro propósito es mejorar la calidad de vida de las personas proporcionándoles seguridad y acompañamiento a la hora de la realización de un tratamiento médico o estético. Queremos fomentar el bienestar en todos los segmentos de edad de la población. Buscamos garantizar la máxima eficiencia desde todas las perspectivas de nuestra institución.</p>                         
@@ -95,5 +97,10 @@
                 </div>
             </div> 
     </footer>  
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

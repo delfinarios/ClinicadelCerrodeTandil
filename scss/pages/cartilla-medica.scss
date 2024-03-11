@@ -3,13 +3,14 @@
 @include intro-seccion-bootsrap;
 @include mobile{
     padding: 60px 0 20px 0;
+    margin: 12px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     .conteiner-fluid{
             width: 100%;
-            margin: 0 15px;
+            margin: 20px 15px !important;
             padding: 0 25px;
         }
     }
@@ -21,6 +22,20 @@
     display: flex;
     justify-content: center;
     @include mobile{
+        padding: 60px 0 60px 0;
+        display: flex;
+        justify-content: center;
+        .row{
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 1rem;
+        }
+        .me-2{
+            margin: 0 !important;
+            margin-right: 0.5rem !important;
+        }
+    }
+    @include tablet{
         padding: 60px 0 60px 0;
         display: flex;
         justify-content: center;
@@ -94,6 +109,11 @@
         }
         option{
             background-color:$color-claro;
+            @include mobile{
+                font-size: 10px;
+                padding: 1px;
+                min-height: 0.5rem;
+            }
             &:hover{
                 background-color: $color-claro;
                 color: $color-secundario !important;
@@ -105,6 +125,15 @@
         margin: 0 90px;
         padding: 0 200px;
         @include mobile{
+            width: 100%;
+            margin: 0 15px;
+            padding: 0 25px;
+            .col-6 {
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+        @include tablet{
             width: 100%;
             margin: 0 15px;
             padding: 0 25px;

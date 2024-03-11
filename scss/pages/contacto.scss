@@ -37,6 +37,13 @@
             padding: 15px 0;
         }
     }
+    @include tablet{
+        padding: 20px 20px;
+        .col-1 {
+            flex: 0 0 auto;
+            width: 45%;
+        }
+    }
 /* Gradient */
     background: rgba(217,217,217,0);
     background: -moz-linear-gradient(left, rgba(217,217,217,0) 0%, rgba(217,217,217,0.39) 39%, rgba(217,217,217,1) 100%);
@@ -84,6 +91,11 @@
     justify-content: space-around;
     align-items: flex-start;
     @include mobile{
+        margin: 10px 0;
+        padding: 30px 15px;
+        width: 100%;
+    }
+    @include tablet{
         margin: 10px 0;
         padding: 30px 15px;
         width: 100%;
