@@ -4,5 +4,7 @@
 Temas utilizados:
 -HTML
 -CSS
+-Bootstrap
+-SASS
 
 Se trata de un sitio web de una Clínica de la ciudad de Tandil, Buenos Aires. Es un rediseño que se realizo en el curso de Diseño UX UI de Coderhouse.
