@@ -60,7 +60,7 @@
             text-align: center;
             height: 350px;
             width: 350px;
-            background-image: url(../Images/clinica.png);
+            background-image: url(../images/clinica.png);
             background-repeat: no-repeat;      
             -webkit-box-shadow: 10px 13px 54px -24px rgba(24,24,24,1);
             -moz-box-shadow: 10px 13px 54px -24px rgba(24,24,24,1);
@@ -73,15 +73,15 @@
                 margin: 1rem 0.5rem;
             }
             &:first-of-type{
-                background-image: url(../Images/clinica.png);
+                background-image: url(../images/clinica.png);
                 background-repeat: no-repeat;
             }
             &:nth-of-type(2){
-                background-image: url(../Images/mision.png);
+                background-image: url(../images/mision.png);
                 background-repeat: no-repeat;
             }
             &:last-of-type{
-                background-image: url(../Images/vision.png);
+                background-image: url(../images/vision.png);
                 background-repeat: no-repeat;
             }
             &:hover{

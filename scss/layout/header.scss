@@ -140,9 +140,6 @@ header{
             }
             @include tablet{
                 font-size: $texto-sm;
-                &:active{
-                    color: $color-secundario 
-                }
             }
         }
         a{
@@ -167,6 +164,11 @@ header{
         position: relative;
         &:hover .dropdown-conteiner{
             display: flex;
+        }
+        @include tablet{
+            &:active .dropdown-conteiner{
+                display: flex;
+            } 
         }
     }
     .dropdown-conteiner{

@@ -120,7 +120,6 @@
             }
         }
     }
-}
     .accesos-directos { 
             width: 100%;
             height: auto; 
@@ -190,7 +189,7 @@
                 }
             }  
         } 
-
+}
 #especialidades{
     @include config-secciones;
     flex-direction: row;
@@ -345,7 +344,6 @@
         }
     }
 }
-
 #noticias{
     @include config-secciones;
     flex-direction: column;
@@ -478,7 +476,6 @@
         }
     }
 }
-
 #contacto{
     @include config-secciones;
     margin: 60px 0 90px 0;
