@@ -241,9 +241,6 @@ header ul li:hover {
   header ul li {
     font-size: 12px;
   }
-  header ul li:active {
-    color: #DD592A;
-  }
 }
 header ul a {
   color: #181818;
@@ -269,6 +266,11 @@ header .dropdown {
 }
 header .dropdown:hover .dropdown-conteiner {
   display: flex;
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  header .dropdown:active .dropdown-conteiner {
+    display: flex;
+  }
 }
 header .dropdown-conteiner {
   display: none;
@@ -575,17 +577,16 @@ footer .abajo img {
     border-radius: 10px;
   }
 }
-
-.accesos-directos {
+#bienvenido .accesos-directos {
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 576px) {
-  .accesos-directos {
+  #bienvenido .accesos-directos {
     display: none;
   }
 }
-.accesos-directos nav {
+#bienvenido .accesos-directos nav {
   margin: 0 90px;
   padding: 20px 40px;
   display: flex;
@@ -593,13 +594,13 @@ footer .abajo img {
   justify-content: center;
   flex-direction: row;
 }
-.accesos-directos ul {
+#bienvenido .accesos-directos ul {
   padding: 0 30px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
-.accesos-directos ul a {
+#bienvenido .accesos-directos ul a {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #004E5A;
@@ -613,17 +614,16 @@ footer .abajo img {
   align-self: center;
   width: auto;
 }
-.accesos-directos ul a:hover {
+#bienvenido .accesos-directos ul a:hover {
   color: #004E5A;
   background-color: #FFFFFF;
   border: 1px solid #004E5A;
 }
-
-.cuadro-de-info {
+#bienvenido .cuadro-de-info {
   display: none;
 }
 @media screen and (max-width: 576px) {
-  .cuadro-de-info {
+  #bienvenido .cuadro-de-info {
     width: auto;
     margin: 15px;
     padding: 12px 20px;
@@ -632,20 +632,20 @@ footer .abajo img {
     flex-direction: column;
     align-items: center;
   }
-  .cuadro-de-info p {
+  #bienvenido .cuadro-de-info p {
     text-align: center;
   }
-  .cuadro-de-info .item {
+  #bienvenido .cuadro-de-info .item {
     width: max-content;
     padding: 12px;
     display: flex;
     align-items: center;
     flex-direction: row;
   }
-  .cuadro-de-info .item p {
+  #bienvenido .cuadro-de-info .item p {
     margin: 0 5px;
   }
-  .cuadro-de-info .item img {
+  #bienvenido .cuadro-de-info .item img {
     height: 10%;
     width: 10%;
   }
@@ -1438,7 +1438,7 @@ footer .abajo img {
   text-align: center;
   height: 350px;
   width: 350px;
-  background-image: url(../Images/clinica.png);
+  background-image: url(../images/clinica.png);
   background-repeat: no-repeat;
   -webkit-box-shadow: 10px 13px 54px -24px rgb(24, 24, 24);
   -moz-box-shadow: 10px 13px 54px -24px rgb(24, 24, 24);
@@ -1456,15 +1456,15 @@ footer .abajo img {
   }
 }
 #sobreClinica .sobre-nosotros .conteiner:first-of-type {
-  background-image: url(../Images/clinica.png);
+  background-image: url(../images/clinica.png);
   background-repeat: no-repeat;
 }
 #sobreClinica .sobre-nosotros .conteiner:nth-of-type(2) {
-  background-image: url(../Images/mision.png);
+  background-image: url(../images/mision.png);
   background-repeat: no-repeat;
 }
 #sobreClinica .sobre-nosotros .conteiner:last-of-type {
-  background-image: url(../Images/vision.png);
+  background-image: url(../images/vision.png);
   background-repeat: no-repeat;
 }
 #sobreClinica .sobre-nosotros .conteiner:hover {
